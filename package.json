@@ -1,6 +1,6 @@
 {
-  "name": "isylladev",
-  "version": "0.0.1",
+  "name": "isyll.vercel.app",
+  "version": "1.0.0",
   "type": "module",
   "private": true,
   "scripts": {
