@@ -1,20 +1,20 @@
-import { Geist_Mono, Roboto } from 'next/font/google';
+import { Geist_Mono, Roboto } from 'next/font/google'
 
-import './globals.css';
-import { ThemeProvider } from '@/components/theme-provider';
-import { cn } from '@/lib/utils';
+import './globals.css'
+import { ThemeProvider } from '@/components/theme-provider'
+import { cn } from '@/lib/utils'
 
-const roboto = Roboto({ subsets: ['latin'], variable: '--font-sans' });
+const roboto = Roboto({ subsets: ['latin'], variable: '--font-sans' })
 
 const fontMono = Geist_Mono({
   subsets: ['latin'],
   variable: '--font-mono',
-});
+})
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html
@@ -31,5 +31,5 @@ export default function RootLayout({
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
